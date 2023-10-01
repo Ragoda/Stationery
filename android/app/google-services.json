@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568351788796",
+    "project_id": "alakhwan-5f3ea",
+    "storage_bucket": "alakhwan-5f3ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568351788796:android:4ff629e50cce5d74f35179",
+        "android_client_info": {
+          "package_name": "com.example.stationery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLPQhIMpRyguzmG1BZ6x8ecMNkYcvyuUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
