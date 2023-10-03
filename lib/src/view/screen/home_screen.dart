@@ -15,11 +15,11 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   static List<Widget> screens = [
-    ProductListScreen(),
-    FavoriteScreen(),
+    const ProductListScreen(),
+    const FavoriteScreen(),
     SearchPage(),
-    CartScreen(),
-    ProfileScreen()
+    const CartScreen(),
+    const ProfileScreen()
   ];
 
   @override

@@ -157,7 +157,7 @@ class ProductDetailScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 30),
                       Text(
-                        "About",
+                        "About".tr,
                         style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       const SizedBox(height: 10),
@@ -176,7 +176,7 @@ class ProductDetailScreen extends StatelessWidget {
                           onPressed: product.isAvailable
                               ? () {
                                   controller.addToCart(product);
-                                  Get.to(() => CartScreen());
+                                  Get.to(() => const CartScreen());
                                 }
                               : null,
                           child: const Text("Add to cart"),

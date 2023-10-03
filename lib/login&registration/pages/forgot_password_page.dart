@@ -20,22 +20,14 @@ class ForgotPasswordPage extends StatefulWidget {
 class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   final _formKey = GlobalKey<FormState>();
   final _email = TextEditingController();
-  // final _controller = Get.put(AuthenticationManager());
+
   @override
   Widget build(BuildContext context) {
-    double headerHeight = 280;
     return Scaffold(
         backgroundColor: whiteColor,
         body: SingleChildScrollView(
           child: Column(
             children: [
-              // SizedBox(
-              //   height: headerHeight,
-              //   child: HeaderWidget(
-              //     headerHeight,
-              //     true,
-              //   ),
-              // ),
               SafeArea(
                 child: Container(
                   margin: const EdgeInsets.fromLTRB(25, 1, 25, 10),
@@ -88,12 +80,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                         child: Column(
                           children: <Widget>[
                             Container(
-                              // decoration:
-                              //     ThemeHelper().inputBoxDecorationShaddow(),
                               child: TextFormField(
                                 controller: _email,
-                                // decoration: ThemeHelper()
-                                //     .textInputDecoration("Email".tr, ""),
                                 validator: (val) {
                                   if (val!.isEmpty) {
                                     return "can_not_empty".tr;

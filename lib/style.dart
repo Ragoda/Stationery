@@ -185,7 +185,7 @@ TextStyle heading20Black = const TextStyle(
   fontWeight: FontWeight.normal,
 );
 
-TextStyle headingBlack = TextStyle(
+TextStyle headingBlack = const TextStyle(
   color: blackColor,
   fontFamily: "Cairo",
   fontWeight: FontWeight.bold,

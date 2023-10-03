@@ -26,7 +26,7 @@ class Debouncer {
       timer!.cancel();
     }
     timer = Timer(
-      Duration(milliseconds: Duration.millisecondsPerSecond),
+      const Duration(milliseconds: Duration.millisecondsPerSecond),
       action,
     );
   }
@@ -81,7 +81,7 @@ class JobsState extends State<SearchPage> {
 
     return Scaffold(
       key: _scaffoldKey,
-      endDrawer: ClientDrawer(),
+      endDrawer: const ClientDrawer(),
       appBar: AppBar(
         title: Text("Search".tr),
         actions: [],
@@ -89,30 +89,30 @@ class JobsState extends State<SearchPage> {
       body: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             child: TextField(
               textInputAction: TextInputAction.search,
               cursorColor: primaryColor,
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(25.0),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.grey,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20.0),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: primaryColor,
                   ),
                 ),
-                suffixIcon: InkWell(
+                suffixIcon: const InkWell(
                   child: Icon(
                     Icons.search,
                     color: primaryColor,
                   ),
                 ),
-                contentPadding: EdgeInsets.all(15.0),
+                contentPadding: const EdgeInsets.all(15.0),
                 hintText: 'Search'.tr,
               ),
               onChanged: (string) {
@@ -133,8 +133,8 @@ class JobsState extends State<SearchPage> {
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
-              physics: ClampingScrollPhysics(),
-              padding: EdgeInsets.all(5),
+              physics: const ClampingScrollPhysics(),
+              padding: const EdgeInsets.all(5),
               itemCount: ProductLists.length,
               itemBuilder: (BuildContext context, int index) {
                 return InkWell(
@@ -153,7 +153,7 @@ class JobsState extends State<SearchPage> {
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(5.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,13 +161,13 @@ class JobsState extends State<SearchPage> {
                           ListTile(
                             title: Text(
                               ProductLists[index]["name"].toString(),
-                              style: TextStyle(fontSize: 16),
+                              style: const TextStyle(fontSize: 16),
                             ),
                             subtitle: Text(
                               " ${ProductLists[index]["price"].toString()}" +
                                   "  SDG   ",
                               style:
-                                  TextStyle(fontSize: 12, color: primaryColor),
+                                  const TextStyle(fontSize: 12, color: primaryColor),
                             ),
                             leading: Container(
                                 // width: 50.w,

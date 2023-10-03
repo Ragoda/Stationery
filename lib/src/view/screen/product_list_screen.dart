@@ -39,23 +39,7 @@ class ProductListScreen extends StatelessWidget {
     );
   }
 
-  PreferredSize get _appBar {
-    return PreferredSize(
-      preferredSize: const Size.fromHeight(100),
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              appBarActionButton(AppbarActionType.leading),
-              appBarActionButton(AppbarActionType.trailing),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+ 
 
   Widget _recommendedProductListView(BuildContext context) {
     return SizedBox(
@@ -83,7 +67,7 @@ class ProductListScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            '30% OFF From' + "\n alakhwan",
+                            '30% OFF From' "\n alakhwan",
                             style: Theme.of(context)
                                 .textTheme
                                 .displaySmall
@@ -173,29 +157,23 @@ class ProductListScreen extends StatelessWidget {
       drawerEnableOpenDragGesture: false,
       appBar: AppBar(
         elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              child: IconButton(
-                  onPressed: () {
-                    Get.to(() => SearchPage());
-                  },
-                  icon: Icon(Icons.search, color: primaryColor)),
-            ),
-            Text(
-              "الاخوان",
-              style: TextStyle(
-                  color: blackColor, fontWeight: FontWeight.bold, fontSize: 20),
-            ),
-          ],
+        title: Text(
+          "Alakhwan".tr,
+          style: const TextStyle(
+              color: blackColor, fontWeight: FontWeight.bold, fontSize: 20),
         ),
-        centerTitle: false,
+        leading: InkWell(
+          onTap: () {
+            Get.to(() => SearchPage());
+          },
+          child: IconButton(
+              onPressed: () {
+                Get.to(() => SearchPage());
+              },
+              icon: const Icon(Icons.search, color: primaryColor)),
+        ),
+        centerTitle: true,
         actions: [
-          // ListTile(
-          //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          // children: [
-
           Padding(
             padding: const EdgeInsets.only(left: 18.0, right: 18),
             child: IconButton(

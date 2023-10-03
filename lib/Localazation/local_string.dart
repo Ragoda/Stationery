@@ -5,7 +5,7 @@ class LocaleString extends Translations {
   Map<String, Map<String, String>> get keys => {
         'en_US': {
           'Hello': 'Hello',
-          'RAK_ADVOCATES': 'RAK ADVOCATES',
+          'Alakhwan': 'Alakhwan',
           'Home_Page': ' Home Page ',
           'My_Wallet': ' My Wallet',
           'Notifications': 'Notifications ',
@@ -134,12 +134,12 @@ class LocaleString extends Translations {
           "must_agree": "You must agree to the terms and conditions",
           "Top categories": "Top categories",
           "All_purchases": "All purchases",
-          "Favorites":"Favorites",
-          "Search":"Search"
+          "Favorites": "Favorites",
+          "Search": "Search"
         },
         'ar_SA': {
           'Hello': 'مرحبا بك',
-          'RAK_ADVOCATES': 'مكتب رأس الخيمة للمحاماة',
+          'Alakhwan': 'الأخوان',
           'Home_Page': 'الصفحة الرئيسية',
           'My_Wallet': 'المحفظة ',
           'Notifications': 'الأشعارات',
@@ -268,9 +268,8 @@ class LocaleString extends Translations {
           "must_agree": "يجب ان توافق علي الشروط والاحكام",
           "Top categories": "أعلى الفئات",
           "All_purchases": "كل المشتريات",
-          "Favorites":"المفضلة",
-          "Search":"ابحث"
-
+          "Favorites": "المفضلة",
+          "Search": "ابحث"
         }
       };
 }
